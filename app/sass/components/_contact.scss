@@ -1,0 +1,180 @@
+.contact {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    &-bg {
+        min-height: $top_contact;
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+        .ie & {
+            pointer-events: all;
+        }
+        top: -($top_contact+10);
+        @include breakpoint(mediums) {
+            top: -($top_contact + 100);
+        }
+        @include breakpoint(smalls) {
+            top: -($top_contact + 130);
+            padding-top: ($top_contact + 70);
+        }
+        background: {
+            image: url('../images/bg-contact.png');
+            repeat: no-repeat;
+            position: top center;
+            size: cover;
+        }
+    }
+    &-in {
+        padding-bottom: 60px;
+        padding-top: ($top_contact + 30);
+        overflow: hidden;
+        margin-bottom: 90px;
+        @include breakpoint(smalls) {
+            padding-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 30px;
+        }
+    }
+    &-wr {
+        color: #ffffff;
+        font-size: 18px;
+        position: relative;
+        pointer-events: all;
+    }
+    &-wr-l {
+        padding-right: 100px;
+        @include breakpoint(mediums) {
+            padding-right: 30px;
+        }
+        @include breakpoint(smalls) {
+            padding-right: 0;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 15px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100vh;
+            top: -30px;
+            right: -15px;
+            background-color: #fff;
+            display: block;
+            @include breakpoint(smalls) {
+                display: none;
+            }
+        }
+    }
+    &-wr-r {
+        padding-left: 100px;
+        @include breakpoint(mediums) {
+            padding-left: 30px;
+        }
+    }
+    &-head {
+        font-family: $font_normal;
+        font-size: $font_size_h3;
+        color: #ffffff;
+        @include breakpoint(mediums) {
+            font-size: $font_size_p;
+        }
+        @include breakpoint(smalls) {
+            font-size: $font_size_p - 4;
+            text-align: center;
+            padding-left: 0;
+        }
+        letter-spacing: 10px;
+        padding-left: 35px;
+        padding-bottom: 30px;
+        &.no-pad,
+        &.no-pad-l {
+            padding-left: 0;
+        }
+    }
+    &-input {
+        color: #ffffff;
+        margin-bottom: 10px;
+        background-color: transparent;
+        padding: 10px 15px;
+        border: 1px solid #fff;
+        font-size: 16px;
+        width: 100%;
+        &::placeholder {
+            color: #ffffff;
+        }
+    }
+    &-select {
+        appearance: none;
+        option {
+            background-color: $gray_darker;
+        }
+    }
+    &-a-head {
+        font-size: $font_size_p;
+        font-family: $font_bold;
+        padding-left: 35px;
+    }
+    &-text {
+        line-height: 1.75;
+        padding-left: 35px;
+        position: relative;
+        margin-bottom: 15px;
+        i {
+            position: absolute;
+            left: 0;
+            top: 7px;
+        }
+        &-link {
+            h3 {
+                float: left;
+                margin-top: -2px;
+                margin-bottom: 0;
+                font-family: $font_bold;
+                font-size: $font_size_p;
+            }
+        }
+    }
+    a {
+        color: #ffffff;
+        display: block;
+        clear: left;
+        float: left;
+    }
+    i {
+        float: left;
+    }
+}
+.form-warn-link{
+    text-decoration: underline;
+    font-size: 18px;
+    color: #ffffff;
+}
+.form-fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    input {
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: transparent;
+        margin-left: 5px;
+        margin-right: 2px;
+        position: relative;
+        &:checked {
+            background-color: #fff;
+        }
+        &:after {
+            content: '';
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            display: block;
+        }
+    }
+}

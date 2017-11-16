@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @import "head.html"
+    <title>DKY Sahil Projesi Sitesi</title>
+</head>
+
+<body>
+    @import "header.html"
+    <section class="hero-wr">
+        <video id="video1" class="hero-video hidden-xs" playsinline autoplay muted loop>
+            <source src="images/DKY_Sahil_Tantm_Filmi_min.mp4" type="video/mp4">
+        </video>
+        <img class="visible-xs hero-img" src="images/hero-shoot.jpg" alt="DKY Ada Kartal Hero Resim">
+    </section>
+    <button id="videoAc" class="btn-bilgi btn-zindex visible-xs">
+        <span>Videomuz</span>
+    </button>
+    <section id="hakkimizda" class="info no-pad">
+        <div class="container-fluid no-pad">
+            <div class="col-sm-6">
+                <div class="info-text">
+                    <div class="info-head">Hayat Sahilde Güzel</div>
+                    <p>
+                        Evleri, konumu, manzarası, huzuru, lüks ayrıcalıkları ve yatırım değeriyle hayat DKY Sahil'de güzel.
+                    </p>
+                    <!-- <p>
+                        Kartal Sahil Yolu'nda yükselen DKY Sahil, aynı zamanda E-5, TEM, Minibüs Caddesi, Metro ve Marmaray İstasyonu ile Deniz Otobüsü İskelesi'ne yakın bir konumda hayata geçiyor. Kısa süre içinde hizmete açılacak olan Gebze-Halkalı Raylı Sistemi'ne, Sabiha Gökçen Havaalanı ve Osmangazi Köprüsü'ne kolay ulaşım sunuyor.
+                    </p> -->
+                    <a id="detayliBilgi" href="#" class="btn-bilgi">
+                        <span>Detaylı bilgi</span>
+                        <span class="icon-long-right"></span>
+                    </a>
+                    <a id="iosGallery" href="images/renders/DKY_Sahil_12_21_07.jpg" rel="gl" class="thumb btn-bilgi hidden">
+                        <span>Galeri</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 no-pad">
+                <div class="info-film">
+                    <div class="film-img" style="background-image: url('images/hero-shoot.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lokasyon" class="lokasyon">
+        <div class="container col-container">
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-train"></i>
+                </span>
+                <div class="prop">METRO'YA</div>
+                <div class="value">10 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-air"></i>
+                </span>
+                <div class="prop">HAVAALANINA</div>
+                <div class="value">20 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-way"></i>
+                </span>
+                <div class="prop">TEM OTOYOL’UNA
+                </div>
+                <div class="value">15 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-marine"></i>
+                </span>
+                <div class="prop">SAHİLE</div>
+                <div class="value">5 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-avm"></i>
+                </span>
+                <div class="prop">AVM'YE</div>
+                <div class="value">10 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-hospital"></i>
+                </span>
+                <div class="prop">HASTANE'YE</div>
+                <div class="value">5 DK</div>
+            </div>
+            <div class="col">
+                <span class="icon">
+                    <i class="icon-court"></i>
+                </span>
+                <div class="prop">ADLİYE'YE</div>
+                <div class="value">8 DK</div>
+            </div>
+        </div>
+    </section>
+    <section id="galeri" class="galeri">
+        <div class="side-head">GALERİ</div>
+        <div class="container">
+            <div class="button-group filters-button-group row">
+                <div class="col-sm-4">
+                    <button class="button btn btn-default is-checked" data-filter="*">Tüm Görseller</button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="button btn btn-default" data-filter=".dis">Dış Görseller</button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="button btn btn-default" data-filter=".ic">İç Görseller</button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <a href="images\renders\DKY_Sahil_03_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images\renders\DKY_Sahil_03_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_04_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_04_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_06_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_06_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_07_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_07_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_08_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_08_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_10_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_10_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/DKY_Sahil_12_21_07.jpg" rel="gl" class="thumb grid-item dis">
+                    <img src="images/renders/DKY_Sahil_12_21_07.jpg" alt="">
+                </a>
+                <a href="images/renders/salon-render.jpg" rel="gl" class="thumb grid-item ic">
+                    <img src="images/renders/salon-render.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="side-head">GALERİ</div>
+    </section>
+    <section id="sahil" class="ada-spot">
+        <div class="container">
+            <div class="ada-logo">
+                <img src="images/sahil-logo.png" alt="DKY Sahil Logo">
+            </div>
+            <h5 class="ada-head">Leb-i Derya</h5>
+            <p>
+                Kartal sahilinde denize ilk parselde yükselen DKY Sahil, önü kapanmaz adalar manzarasıyla görenleri büyülüyor. Tüm dairelerin
+                sahip olduğu bu göz kamaştırıcı, panoramik manzara huzur dolu bir ev yaşamının kapılarını aralıyor.
+            </p>
+        </div>
+    </section>
+    <section class="plans" id="plans">
+        <div class="side-head">Daire Planları</div>
+        <div class="container">
+
+            <div class="row">
+
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip1.jpg">
+                    <img src="images\planlar\Sahil_dairetip1.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Tip 1</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip2.jpg">
+                    <img src="images\planlar\Sahil_dairetip2.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip3.jpg">
+                    <img src="images\planlar\Sahil_dairetip3.jpg" alt="" />
+                    <div class="mask">
+                        <p>3+1,5 Tip 3</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip4.jpg">
+                    <img src="images\planlar\Sahil_dairetip4.jpg" alt="" />
+                    <div class="mask">
+                        <p>3+1,5 Tip 4</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip5.jpg">
+                    <img src="images\planlar\Sahil_dairetip5.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1 Bahçe Katı Tip 5</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip6.jpg">
+                    <img src="images\planlar\Sahil_dairetip6.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip6b.jpg">
+                    <img src="images\planlar\Sahil_dairetip6b.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip7.jpg">
+                    <img src="images\planlar\Sahil_dairetip7.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip8.jpg">
+                    <img src="images\planlar\Sahil_dairetip8.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip9.jpg">
+                    <img src="images\planlar\Sahil_dairetip9.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip10.jpg">
+                    <img src="images\planlar\Sahil_dairetip10.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+                <a class="plans-link col-sm-2 col-xs-6 no-pad" rel="g" href="images\planlar\Sahil_dairetip1.jpg">
+                    <img src="images\planlar\Sahil_dairetip1.jpg" alt="" />
+                    <div class="mask">
+                        <p>2+1,5 Bahçe Katı Tip 2</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="ozellikler" class="spec">
+        <div class="side-head">ÖZELLİKLER</div>
+        <div class="container">
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-fitnes"></i>
+                </span>
+                <h3>FITNESS SALONU</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-spa"></i>
+                </span>
+                <h3>SPA & SAUNA</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-restoran"></i>
+                </span>
+                <h3>RESTORAN VE CAFE</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-yuzme"></i>
+                </span>
+                <h3>AÇIK VE KAPALI YÜZME HAVUZLARI</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-park"></i>
+                </span>
+                <h3>PARK VE OYUN ALANLARI
+                </h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-bahce"></i>
+                </span>
+                <h3>BAHÇE VE PEYZAJ</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-deniz"></i>
+                </span>
+                <h3>DENİZ MANZARASI</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span class="icon">
+                    <i class="icon-sosyal"></i>
+                </span>
+                <h3>SOSYAL ALANLAR</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-8 col-sm-push-2 text-center">
+                <p>
+                    Aile odaklı bir proje olan DKY Sahil, konforlu daireleri, sosyal alanları, açık/kapalı yüzme havuzu ve spor merkeziyle göz
+                    dolduruyor. DKY Sahil'de ev dışı alanlar en kaliteli malzeme ve ekipmanlarla hayat buluyor.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="yesil" class="huzur clearfix">
+        <div id="carousel-example-generic" class="carousel slide container-fluid no-pad" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\drawing-map.png" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>AYRICALIKLI KONUM</h2>
+
+                        <p>
+                            Kartal sahilinde denize ilk parselde yükselen DKY Sahil, önü kapanmaz adalar manzarasıyla görenleri büyülüyor. Tüm dairelerin
+                            sahip olduğu bu göz kamaştırıcı, panoramik manzara huzur dolu bir ev yaşamının kapılarını aralıyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\sahil-yolu.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>12 km’lik Sahil Yolu’nda</h2>
+
+                        <p>
+                            DKY Sahil yemyeşil parkları, çiçek bahçeleri, yürüyüş ve bisiklet yolları, koşu parkurları, çocuk oyun alanları ve yeme-içme
+                            mekanlarıyla ünlü Sahil Yolu’nda hayata geçiyor. Kadıköy’den Tuzla’ya uzanan 12 km’lik Sahil
+                            Yolu, İstanbul’un en güzel lokasyonlarının başında geliyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\cevre.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Prestijli Çevre</h2>
+
+                        <p>
+                            Yeşil ve mavinin buluştuğu ayrıcalıklı bir semtte yer alan DKY Sahil, Anadolu Yakası’nın seçkin AVM’lerine, hastanelerine,
+                            üniversite ve eğitim kurumlarına komşu. İstanbul’un yeni iş merkezlerinden Kartal’da hayat bulan
+                            bu eşsiz proje, ulusal ve uluslararası firmaların yönetim merkezlerine, bankacılık üslerine,
+                            Pendik Marina ve Kartal Adalet Sarayı’na çok yakın bir lokasyonda bulunuyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\lebi-derya.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Leb-i Derya</h2>
+
+                        <p>
+                            Kartal sahilinde denize ilk parselde yükselen DKY Sahil, önü kapanmaz adalar manzarasıyla görenleri büyülüyor. Tüm dairelerin
+                            sahip olduğu bu göz kamaştırıcı, panoramik manzara huzur dolu bir ev yaşamının kapılarını aralıyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\teras.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Sınırlı Sayıda Teras Daireler</h2>
+
+                        <p>
+                            DKY Sahil’in lüks daireleri, dünyaca ünlü markaların en kaliteli malzemeleriyle inşa ediliyor. 2+1,5’tan 3+1,5’e uzanan daire
+                            seçenekleri, 4+1 teras ve loft daireleri ile 138 prestijli konuttan oluşan bu lüks proje, üst
+                            düzey konfor sunan geniş evleriyle sınırlı sayıda oturumcu için sınırsız ayrıcalık ve eşsiz bir
+                            yatırım fırsatı sunuyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\1.5-konsepti.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>+1,5 Konsepti</h2>
+
+                        <p>
+                            DKY Sahil’deki tüm evlerde manzaraya bakan geniş ve kullanışlı bir balkon bulunuyor. Katlanır camlarını açtığınızda size
+                            eşsiz bir balkon keyfi sunan, kapattığınızda ise evde fazladan yaşam alanı kazandıran bu balkon
+                            sayesinde, DKY Sahil’in evleri +1,5 olarak adlandırılıyor. 2+1,5 ve 3+1,5 evler size yaşamanız
+                            için daha fazla alan sağlıyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\prestijli.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Mükemmel Olanaklar</h2>
+
+                        <p>
+                            Aile odaklı bir proje olan DKY Sahil, konforlu daireleri, sosyal alanları, açık/kapalı yüzme havuzu ve spor merkeziyle göz
+                            dolduruyor. DKY Sahil’de ev dışı alanlar en kaliteli malzeme ve ekipmanlarla hayat buluyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\cocuklar-icin.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Her Şey Çocuklar İçin</h2>
+
+                        <p>
+                            DKY Sahil’de çocukların en sevdiği oyunlar ve aktivitelerle dolu harika bir oyun parkı bulunuyor. Bu açıkhava oyun parkı
+                            çocukların sağlıklı gelişimlerini, merak ve keşfetme isteklerini destekliyor. Bu yüzden çocuklar
+                            DKY Sahil’i çok seviyor.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-6 no-pad img-responsive">
+                        <img class="carousel-img img-fluid" src="images\bot_specs\sosyal-cevre.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 carousel-text">
+                        <h2>Sosyal Bir Proje</h2>
+
+                        <p>
+                            DKY Sahil arkadaşlarınızla ve komşularınızla keyifli sohbetlerinize ev sahipiliği yapan kafe ve sosyal alanlarıyla da dikkat
+                            çekiyor. DKY Sahil ev dışı alanlarıyla sosyalleşmeyi hayatınızın merkezine alıyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="icon-left glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="icon-right glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="map">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 map" id="harita">
+
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 hidden-xs">
+                    <div class="har-projs">
+                        <ul class="dplaces col-md-12">
+                            <li id="tumu">
+                                <span class="circle"></span> Tümü
+                            </li>
+                            <li id="hastaneler">
+                                <span class="circle"></span> Hastaneler
+                            </li>
+                            <li id="okul">
+                                <span class="circle"></span> Okul
+                            </li>
+                            <li id="resmi">
+                                <span class="circle"></span> Resmi Kurum</li>
+                            <li id="avm">
+                                <span class="circle"></span> AVM
+                            </li>
+                            <li id="orman">
+                                <span class="circle"></span> Orman
+                            </li>
+                            <li id="ulasim">
+                                <span class="circle"></span> Ulaşım
+                            </li>
+                            <li id="cami">
+                                <span class="circle"></span> Camii
+                            </li>
+                            <li id="park">
+                                <span class="circle"></span> Park
+                            </li>
+                            <li id="yemek">
+                                <span class="circle"></span> Yemek
+                            </li>
+                            <li id="spor">
+                                <span class="circle"></span> Spor
+                            </li>
+                            <li id="yolTarifi">
+                                <span class="circle"></span> Yol Tarifi
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="bize" class="contact">
+        <div class="container-fluid no-pad">
+            <div class="contact-bg">
+                <div class="container">
+                    <div class="col-sm-8 contact-in">
+                        <div class="contact-wr contact-wr-l">
+                            <form action="">
+                                <div class="contact-head no-pad-l">TALEP FORMU</div>
+                                <div class="row">
+                                    <div class="col-sm-6 no-pad-r">
+                                        <input class="contact-input ad" placeholder="Adınız" type="text" id="ad">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="contact-input soyad" placeholder="Soyadınız" type="text" id="soyad">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 no-pad-r">
+                                        <input class="contact-input tel" type="tel" id="tel" placeholder="Cep Numaranız">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="contact-input email" type="email" id="email" placeholder="E-mail Adresiniz">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <select class="contact-input contact-select proje" name="daireSec" id="proje">
+                                        <option value="0" label="İlgilendiğiniz daire tipi">İlgilendiğiniz daire tipi</option>
+                                        <option value="1">2+1,5</option>
+                                        <option value="1">3+1,5</option>
+                                        <option value="1">4+,15</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix">
+                                    <textarea name="mesaj" id="mesaj" cols="30" rows="2" placeholder="Mesajınız" class="contact-input contact-textarea mesaj"></textarea>
+                                </div>
+                                <a id="legalWarning" class="form-warn-link" href="javascript:void(0)">Yasal uyarı'</a>yı okudum ve
+                                <div class="form-fieldset">
+                                    <label for="ke">
+                                        <input id="ke" type="radio" value="1" name="group1">
+                                        <span>Kabul ediyorum</span>
+                                    </label>
+                                    <label for="kt">
+                                        <input id="kt" type="radio" value="2" name="group1">
+                                        <span>Kabul etmiyorum</span>
+                                    </label>
+                                </div>
+                                <div class="clearfix">
+                                    <button role="button" type="submit" class="btn btn-submit submit" value="Gönder" id="submit">
+                                        <i class="icon-submit"></i>
+                                        <span>Gönder</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 contact-in no-pad">
+                        <div class="contact-wr contact-wr-r">
+                            <div class="contact-head">İLETİŞİM</div>
+                            <div class="contact-a-head">Satış Ofisi</div>
+                            <div class="contact-text">
+                                <i class="icon-pin"></i>Kordonboyu Mahallesi, Akdeniz Cd. 25/B, 34760 Kartal/İstanbul</div>
+                            <a href="mailto:satis@dkysahil.com" class="contact-text contact-text-link">
+                                <i class="icon-mail"></i> satis@dkysahil.com</a>
+                            <a href="tel:4449359" class="contact-text contact-text-link clearfix">
+                                <i class="icon-phone"></i>
+                                <h3>
+                                    4449359
+                                </h3>
+                            </a>
+                            <a target="_blank" href="https://www.google.com.tr/maps/dir//DKY+Sahil+Sat%C4%B1%C5%9F+Ofisi,+Kordonboyu+Mahallesi,+Akdeniz+Cd.+25%2FB,+34760+Kartal%2F%C4%B0stanbul/@40.894842,29.16953,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cac391d185e9c5:0x338e80d035e7a4f8!2m2!1d29.1706545!2d40.8946101"
+                                class="btn-small btn-submit btn-text-small clearfix">
+                                <i class="icon-direction"></i>
+                                <span>Yol Tarifi</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade modal-profile" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="contact-wr">
+                            <form action="">
+                                <div class="contact-head no-pad-l">TALEP FORMU</div>
+                                <div class="row">
+                                    <div class="col-sm-6 no-pad-r">
+                                        <input class="contact-input ad" placeholder="Adınız" type="text" id="Mad">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="contact-input soyad" placeholder="Soyadınız" type="text" id="Msoyad">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 no-pad-r">
+                                        <input class="contact-input tel" type="tel" id="Mtel" placeholder="Cep Numaranız">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="contact-input email" type="email" id="Memail" placeholder="E-mail Adresiniz">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <select class="contact-input contact-select proje" name="daireSec" id="Mproje">
+                                        <option value="0" label="İlgilendiğiniz daire tipi">İlgilendiğiniz daire tipi</option>
+                                        <option value="1">2+1,5</option>
+                                        <option value="1">3+1,5</option>
+                                        <option value="1">4+,15</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix">
+                                    <textarea name="mesaj" id="Mmesaj" cols="30" rows="2" placeholder="Mesajınız" class="contact-input contact-textarea mesaj"></textarea>
+                                </div>
+                                <a id="MlegalWarning" class="form-warn-link" href="javascript:void(0)">Yasal uyarı'</a>yı okudum ve
+                                <div class="form-fieldset">
+                                    <label for="Mke">
+                                        <input id="Mke" type="radio" value="1" name="group1">
+                                        <span>Kabul ediyorum</span>
+                                    </label>
+                                    <label for="Mkt">
+                                        <input id="Mkt" type="radio" value="2" name="group1">
+                                        <span>Kabul etmiyorum</span>
+                                    </label>
+                                </div>
+                                <div class="clearfix">
+                                    <button role="button" type="submit" class="btn btn-submit submit" value="Gönder" id="Msubmit">
+                                        <i class="icon-submit"></i>
+                                        <span>Gönder</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-profile" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModelLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video id="video1" class="mobil-video" playsinline muted loop controls autoplay>
+                        <source src="images/DKY_Sahil_Tantm_Filmi_min.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    @import "footer.html"
+</body>
+
+</html>

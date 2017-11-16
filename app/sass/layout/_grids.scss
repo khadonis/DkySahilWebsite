@@ -1,0 +1,56 @@
+.grid-item,
+.grid-sizer {
+    width: 16.666%;
+    @include breakpoint(mediums) {
+        width: 33.333%;
+    }
+    @include breakpoint(smalls) {
+        width: 50%;
+    }
+}
+
+.grid-item {
+    padding: 5px;
+    float: left;
+    img {
+        width: 100%;
+        display: block;
+        min-height: 100%;
+        .ios & {
+            height: auto;
+            //min-height: fit-content;
+        }
+    }
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item--width2 {
+    width: 50%;
+}
+
+.grid-item--width3 {
+    width: 66.5%;
+}
+
+.grid-item--height {
+    height: 273px;
+}
+
+.grid-item--height2 {
+    height: 495px;
+    @include breakpoint(mediums) {
+        height: 315px;
+    }
+    @include breakpoint(smalls) {
+        height: 133px;
+    }
+}
+
+.modal-body {
+    text-align: center;
+}

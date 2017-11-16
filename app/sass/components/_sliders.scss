@@ -1,0 +1,84 @@
+.carousel-control {
+    top: auto;
+    bottom: -30px;
+    @include breakpoint(mediums) {
+        body & {
+            bottom: 0;
+        }
+    }
+    @include breakpoint(smalls) {
+        body & {
+            top: 0;
+            height: 50px;
+            padding: 30px;
+            display: none;
+        }
+    }
+    height: 60px;
+    width: 5%;
+    padding: 30px;
+    &.right,
+    &.left {
+        background-color: rgba(#000, 0.9);
+        color: #fff;
+        span {
+            top: 25px;
+        }
+    }
+    &.right {
+        right: 5%;
+        left: auto;
+        @include breakpoint(huges) {
+            body & {
+                right: 0%;
+            }
+        }
+    }
+    &.left {
+        right: 10%;
+        left: auto;
+        @include breakpoint(huges) {
+            body & {
+                right: 67px;
+            }
+        }
+        @include breakpoint(larges) {
+            body & {
+                right: 60px;
+            }
+        }
+        @include breakpoint(smalls) {
+            body & {
+                right: 60px;
+            }
+        }
+    }
+}
+
+.carousel-img {
+    height: $slider_height + 20;
+    max-height: $slider_height + 20;
+    padding: 30px;
+    @include breakpoint(larges) {
+        height: $slider_height;
+        max-height: $slider_height;
+    }
+    @include breakpoint(mediums) {
+        max-height: $slider_height - 20;
+    }
+    @include breakpoint(smalls) {
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.carousel-text {
+    padding: 30px;
+    @include breakpoint(smalls) {
+        padding-top: 0;
+        h2 {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,345 @@
+.info {
+    .ie & {
+        overflow: hidden;
+    }
+    z-index: 0;
+    clip-path: polygon(100% 0, 100% 100%, 17% 94%, 0 100%, 0 0);
+    top: $top_sections / 2;
+    height: 100vh;
+    position: relative;
+    @include breakpoint(huges) {
+        height: 125vh;
+        top: -10px;
+    }
+    @include breakpoint(mediums) {
+        height: 85vh;
+    }
+    @include breakpoint(smalls) {
+        height: 120vh;
+        clip-path: none;
+        top: 0;
+    }
+    .ie & {
+        background-color: #fff;
+        top: 62px;
+        z-index: $zindex_left+1;
+        height: auto;
+    }
+    &-head {
+        font-family: $font_buttercup;
+        font-size: 60px;
+        @include breakpoint(huges) {
+            font-size: 40px;
+        }
+        @include breakpoint(mediums) {
+            text-align: center;
+        }
+    }
+    &-text {
+        padding-top: 260px;
+        padding-left: 60px;
+        padding-bottom: 185px;
+        padding-right: 60px;
+        @include breakpoint(huges) {
+            padding-top: 150px;
+        }
+        @include breakpoint(smalls) {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 50px;
+        }
+    }
+    &-film {
+        position: relative;
+        .film-img {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            @include breakpoint(huges) {
+                height: 110vh;
+            }
+            @include breakpoint(mediums) {
+                height: 70vh;
+            }
+            background: {
+                size: cover;
+                repeat: no-repeat;
+                position: center;
+            }
+            z-index: $zindex_left;
+            &.film-has-video {
+                cursor: pointer;
+                &:after {
+                    content: '';
+                    @include all-align(absolute);
+                    @extend .play-icon;
+                }
+            }
+        }
+        .video-frame {
+            position: absolute;
+            width: 100%;
+            max-height: 100vh;
+            @include breakpoint(mediums) {
+                max-height: 70vh;
+            }
+        }
+    }
+}
+
+.lokasyon {
+    z-index: $zindex_side_heads;
+    height: 100vh;
+    @include breakpoint(mediums) {
+        height: 70vh;
+        padding: 25px 0;
+    }
+    @include breakpoint(smalls) {
+        top: 0;
+        height: 110vh;
+        padding: 0;
+    }
+    position: relative;
+    padding: 0;
+    width: 100%;
+    top: $top_sections*2;
+    .ie & {
+        top: -62px;
+    }
+    background-image: url('../images/lokasyon-bg.png');
+    background: {
+        repeat: no-repeat;
+        position: 0 0;
+        size: cover;
+    }
+    .container {
+        @include vertical-align();
+        .ie & {
+            top: 60%;
+        }
+        @include breakpoint(smalls) {
+            margin-top: 50px;
+        }
+    }
+    /* &-inner {
+        color: #fff;
+    } */
+    .container.col-container {
+        display: flex;
+        @include breakpoint(mediums) {
+            display: block;
+        }
+        @include breakpoint(smalls) {
+            width: 100%;
+        }
+    }
+    .col {
+        width: 14.285%;
+        @include breakpoint(mediums) {
+            width: 25%;
+            float: left;
+            padding: 0 15px 15px;
+        }
+        @include breakpoint(smalls) {
+            width: 33.33%;
+            padding: 0 5px;
+        }
+    }
+    .prop,
+    .value {
+        font-size: 18px;
+        @include breakpoint(mediums) {
+            font-size: 14px;
+        }
+        font-family: $font_bold;
+        color: rgb(255,
+        255,
+        255);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .value {
+        font-size: 24px;
+        @include breakpoint(mediums) {
+            font-size: 16px;
+        }
+        @include breakpoint(smalls) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.icon {
+    border-radius: 120px;
+    width: 120px;
+    @include breakpoint(mediums) {
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+        padding: 76px;
+    }
+    @include breakpoint(smalls) {
+        margin-bottom: 15px;
+        width: 0;
+        padding: 45px;
+    }
+    height: 120px;
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 30px;
+    position: relative;
+    i {
+        @include all-align(absolute);
+    }
+}
+
+.ada {
+    &-spot {
+        padding: 90px 0;
+        @include breakpoint(smalls) {
+            padding: 130px 0 50px;
+        }
+        
+    }
+    &-logo {
+        text-align: center;
+    }
+}
+
+.video {
+    position: relative;
+    height: 100vh;
+    z-index: $zindex_header - 1;
+    @include breakpoint(mediums) {
+        height: 70vh;
+    }
+}
+
+.spec {
+    padding: 150px 0 0;
+    @include breakpoint(mediums) {
+        padding: 100px 0 0;
+    }
+    position: relative;
+    .side-head {
+        top: -38px;
+    }
+    .col-sm-3 {
+        padding: 60px 15px;
+        border: 1px solid $gray_darker;
+        min-height: 352px;
+        max-height: 352px;
+        border-top: none;
+        border-right: none;
+        margin: 0; //&:nth-child(4n),
+        &:first-child,
+        &:nth-child(5n) {
+            border-left: none;
+        }
+        &:nth-child(n+5) {
+            border-bottom: none;
+            @include breakpoint(smalls) {
+                border-bottom: 1px solid $gray_darker;
+            }
+        }
+        @include breakpoint(smalls) {
+            padding: 0;
+            margin-bottom: 30px;
+            min-height: 225px;
+            border-left: none;
+        }
+    }
+    .icon {
+        background-color: #1b1b1b;
+        width: 140px;
+        height: 140px;
+        @include breakpoint(smalls) {
+            width: 110px;
+            height: 110px;
+        }
+    }
+    .container {
+        margin-bottom: 60px;
+        @include breakpoint(smalls) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.huzur {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 90px;
+    background-color: lighten($gray_dark, 60%);
+    @include breakpoint(huges) {
+        body & {
+            //height: 100vh;
+            background-position: center center;
+            margin-top: 60px;
+            background-size: cover;
+        }
+    }
+    @include breakpoint(larges) {
+        body & {
+            background-size: 100%;
+        }
+    }
+    background: {
+        // image: url('../images/huzur-bg.png');
+        repeat: no-repeat;
+        position: center center;
+        size: 100%;
+    }
+    .item {
+        min-height: $slider_height;
+        @include breakpoint(huges) {
+            background-size: 70%;
+            background-position: center center;
+        }
+        @include breakpoint(mediums) {
+            body & {
+                min-height: 36vh;
+            }
+        }
+    }
+    .carousel.slide {
+        @include breakpoint(huges) {
+            width: 100%;
+        }
+        padding-top: 90px; // height: 104vh;
+        min-height: $slider_height;
+        @include breakpoint(mediums) {
+            body & {
+                min-height: $slider_height;
+            }
+        }
+        @include breakpoint(smalls) {
+            body & {
+                min-height: $slider_height * 2;
+                padding-top: 30px;
+            }
+        }
+    }
+    @include breakpoint(mediums) {
+        body & {
+            background-position: 520px top;
+            background-size: 125%;
+            height: 50vh;
+        }
+    }
+    @include breakpoint(smalls) {
+        body & {
+            margin-bottom: 20vh;
+            height: auto;
+            min-height: 100%;
+        }
+    }
+    position: relative;
+    width: 100%; // border-top: 15px solid lighten($gray_darker,    70%);
+    font-size: 66.8%;
+}
+
+.mobil-video {
+    width: 100%;
+}

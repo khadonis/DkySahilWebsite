@@ -1,0 +1,42 @@
+.hero-wr {
+    clip-path: polygon(100% 0%, 100% 86%, 63% 100%, 0 86%, 0 0);
+    position: relative;
+    top: $header_height;
+    @include breakpoint(smalls) {
+        body & {
+            top: ($header_height) - 20;
+            height: (100vw)/1.5;
+        }
+    }
+    @include breakpoint(mediums) {
+        body & {
+            height: 66.125vw;
+        }
+    }
+    z-index: $zindex_heros;
+    left: 0;
+    &,
+    .hero-video {
+        height: (100vw)/2.168;
+        width: 100%;
+        top: $header_height;
+        background-size: cover;
+        //background-image: url('../images/hero-shoot.jpg');
+        background-color: transparent;
+    }
+    .hero-video {
+        position: absolute;
+        z-index: $zindex_heros;
+        height: $width_video_height;
+        top: -5px;
+    }
+    .hero-img {
+        width: 100%;
+        @include breakpoint(smalls) {
+            width: auto;
+            height: 68.25vw;
+            
+        }
+    }
+    
+}

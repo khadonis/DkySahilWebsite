@@ -1,0 +1,21 @@
+@include sprites($spritesheet-sprites);
+i {
+    display: block;
+}
+
+.icon {
+    .carousel-control &-right,
+    .carousel-control &-left {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.icon-top-direction {
+    display: inline-block;
+    a:hover & {
+        @extend .icon-top-direction-h;
+    }
+}
+
+

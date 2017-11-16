@@ -1,0 +1,30 @@
+.ie {
+    overflow-x: hidden;
+}
+
+html.ios {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: $font-normal;
+    html.ios & {
+        overflow-x: hidden;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+    color: $gray_darker;
+}

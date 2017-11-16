@@ -1,0 +1,33 @@
+//fonts
+$font_normal: 'flexoregular';
+$font_bold: 'flexobold';
+$font_thin: 'flexothin';
+$font_buttercup: 'buttercup_sampleregular';
+$font_size_p: 24px;
+$font_size_h3: 30px;
+$font_size_small: 14px;
+//texts
+$btn_indents: 5px;
+//colors
+$gray_darker: #282828;
+$gray_dark: lighten($gray_darker, 15%);
+$transparent_header: rgba(0, 0, 0, .2);
+$brand_color: #ea5b0c;
+//scales
+$width_left: 100vh;
+$width_video_height: (100vw)/1.777777777777778;
+$header_height: 80px;
+$loc_name_height: 76px;
+$slider_height: 50vh;
+//coordinates
+$top_sections: -125px;
+$side-heads: 290px;
+$top_contact: 288px;
+//z-indexes
+$zindex_heros:1;
+$zindex_header:6;
+$zindex_left: 3;
+$zindex_side_heads: 2;
+$zindex_info: 4;
+$zindex_video_btn: 5;
+$zindex_hover_text: 7;

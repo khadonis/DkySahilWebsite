@@ -1,0 +1,193 @@
+.button-group {
+    margin: 0 -10px;
+}
+
+.hamb-menu {
+    &-line {
+        width: 100%;
+        height: 4px;
+        background-color: $gray_dark;
+        margin-bottom: 7px;
+        border-radius: 4px;
+        display: block;
+        @extend %transition;
+        .hamb-menu.closed & {
+            position: absolute;
+            top: 50%;
+            &:first-child {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    width: 40px;
+    height: 26px;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    cursor: pointer;
+    &.closed {
+        height: 40px;
+        top: 20px;
+        @include breakpoint(smalls) {
+            top: 10px;
+        }
+    }
+    @include breakpoint(smalls) {
+        top: 17px;
+        left: 20px;
+    }
+}
+
+button {
+    background: none;
+    width: auto;
+}
+
+.btn {
+    &-default {
+        background-color: transparent;
+        border: 5px solid $gray_darker;
+        font-family: $font_bold;
+        padding: 15px 30px;
+        width: 100%;
+        margin-bottom: 15px;
+        letter-spacing: $btn_indents;
+        text-indent: $btn_indents;
+        transition: color, background ease .3s;
+        @include breakpoint(larges) {
+            font-size: 21px;
+        }
+        &:hover {
+            background-color: $gray_darker;
+            color: #fff;
+        }
+    }
+    &-zindex {
+        position: relative;
+        z-index: $zindex_video_btn;
+        top: 90px; //font-size: 12px;
+        padding: 5px 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    &-bilgi {
+        display: block;
+        position: relative;
+        padding: 30px 65px;
+        border: 5px solid $gray_darker;
+        margin-top: 120px;
+        &.btn-zindex{
+            width: 80%;
+        }
+        @include breakpoint(huges) {
+            margin-top: 30px;
+        }
+        @include breakpoint(mediums) {
+            padding: 15px 30px;
+            width: 100%;
+            line-height: 1;
+        }
+        line-height: 0.5;
+        letter-spacing: $btn_indents;
+        text-indent: $btn_indents;
+        text-align: center;
+        font-family: $font_bold;
+        transition: all 0.3s;
+        width: 350px;
+        .icon-long-right {
+            position: absolute;
+            left: 70%;
+            opacity: 0;
+            top: 24px;
+            @extend %transition;
+        }
+        &:hover {
+            color: $gray_darker; //background-color: darken($transparent_header, 20%);
+            .icon-long-right {
+                opacity: 1;
+                left: 85%
+            }
+        }
+        /* &:before {
+            @extend %btn-befores;
+        }
+        &:hover:before {
+            @extend %btn-hover-befores;
+        } */
+    }
+    &-submit {
+        color: #ffffff;
+        margin-bottom: 10px;
+        background-color: transparent;
+        padding: 10px 15px 10px 0;
+        font-size: 22px;
+        text-transform: uppercase;
+        border: none;
+        span,
+        i {
+            float: left;
+        }
+        span {
+            padding-left: 10px;
+        }
+    }
+    &-text-small {
+        text-transform: capitalize;
+    }
+    &-small {
+        font-size: 18px;
+    }
+}
+
+.close {
+    border-radius: 60px;
+    background-color: $gray_darker;
+    color: #fff;
+    font-size: 32px;
+    border: none;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    &:hover {
+        background-color: $brand_color;
+    }
+}
+
+.modal-form-link {
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: 0; //bottom: 0;
+    top: 50%;
+    left: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    right: -152px;
+    padding: 7px 15px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: $brand_color;
+    color: #ffffff;
+    min-height: 25px;
+    text-align: right;
+    z-index: $zindex_header;
+    @extend %transition;
+    &:hover {
+        right: -147px;
+    }
+    span,
+    i {
+        float: left;
+    }
+    span {
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+}

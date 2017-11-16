@@ -1,0 +1,29 @@
+%btn-befores-1 {
+    content: "\f178";
+    position: absolute;
+    height: 100%;
+    font-size: 125%;
+    line-height: 3.5;
+    color: $gray_darker;
+    transition: all 0.3s;
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    left: 70%;
+    opacity: 0;
+    top: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+%btn-hover-befores-1 {
+    left: 85%;
+    opacity: 1;
+}
+
+%transition {
+    transition: all ease 0.2s;
+}

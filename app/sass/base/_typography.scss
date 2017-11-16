@@ -1,0 +1,217 @@
+body,
+p {
+    font-size: $font_size_p;
+    color: $gray_darker;
+    @include breakpoint(mediums) {
+        font-size: $font_size_p - 6;
+    }
+}
+
+.side-head {
+    font-family: $font_bold;
+    font-size: 48px;
+    color: $gray_darker;
+    letter-spacing: 12px;
+    z-index: $zindex_heros;
+    text-indent: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -$side-heads;
+    @include breakpoint(huges) {
+        font-size: $font_size_h3;
+        padding: 0 20px 5px;
+        body .spec &, body .plans & {
+            position: relative;
+            transform: rotate(0deg);
+            top: -50px;
+            left: 0;
+            display: inline-block;
+        }
+    }
+    @include breakpoint(smalls) {
+        position: relative;
+        transform: rotate(0deg);
+        top: -50px;
+        left: 0;
+        display: inline-block;
+    }
+    .ie & {
+        top: -100px;
+    }
+    left: 10%;
+    transform: rotate(90deg);
+    transform-origin: 0%;
+    border-bottom: 2px solid $gray_darker;
+    padding:0 60px 5px;
+    &:last-of-type {
+        color: #fff;
+        left: auto;
+        right: -10%;
+        top: auto;
+        bottom: -40px;
+        border-bottom-color: #fff;
+        transform: rotate(270deg);
+        @include breakpoint(smalls) {
+            position: relative;
+            transform: rotate(0deg);
+            top: 10px;
+            left: 0;
+            display: none;
+        }
+    }
+}
+
+h2 {
+    .plans & {
+        font-size: 48px;
+        font-family: $font_bold;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        margin: 15px 0;
+        @include breakpoint(mediums) {
+            font-size: 30px;
+        }
+        @include breakpoint(smalls) {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .huzur & {
+        font-size: 60px;
+        font-family: $font_bold;
+        color: rgb(39, 174, 96);
+        line-height: 1.2;
+        margin-bottom: 40px;
+        @include breakpoint(huges) {
+        //    margin-left: 10%;
+            font-size: 50px;
+        }
+        @include breakpoint(larges) {
+       //     margin-left: 14%;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint(mediums) {
+            margin-bottom: 0;
+        }
+        @include breakpoint(smalls) {
+            margin-left: 0;
+        }
+    }
+}
+
+h3 {
+    .spec & {
+        font-size: 18px;
+        font-family: $font_bold;
+        color: rgb(40, 40, 40);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .huzur & {
+        font-size: 50px;
+        font-family: $font_buttercup;
+        color: rgb(16, 137, 239);
+        line-height: 1.2;
+        margin-top: 333px;
+        margin-left: 12%;
+        @include breakpoint(huges) {
+            margin-top: 200px;
+            margin-left: 35%;
+            font-size: 35px;
+        }
+        @include breakpoint(larges) {
+            margin-top: 50px;
+            margin-left: 51%;
+            font-size: 30px;
+            line-height: 1.7;
+        }
+        @include breakpoint(mediums) {
+            margin-top: 15px;
+            margin-left: 26%;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        @include breakpoint(smalls) {
+            margin-left: 0;
+        }
+    }
+}
+
+h5 {
+    .ada-spot & {
+        font-size: 60px;
+        font-family: $font_buttercup;
+        color: rgb(40, 40, 40);
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        @include breakpoint(mediums) {
+            font-size: 40px;
+        }
+        @include breakpoint(smalls) {
+            margin-top: 30px;
+            font-size: 30px;
+        }
+    }
+}
+
+p {
+    .ada-spot & {
+        font-size: 36px;
+        font-family: $font_normal;
+        color: rgb(40, 40, 40);
+        line-height: 1.667;
+        text-align: center;
+        @include breakpoint(mediums) {
+            font-size: 24px;
+        }
+        @include breakpoint(smalls) {
+            font-size: 18px;
+        }            
+    }
+    .huzur .container div:nth-of-type(2) & {
+        //margin-left: 12%;
+        @include breakpoint(huges) {
+        //    margin-left: 25%;
+        }
+        @include breakpoint(larges) {
+        //    margin-left: 38%;
+            font-size: 16px;
+        }
+        @include breakpoint(mediums) {
+            margin-top: 15px;
+       //     margin-left: 6%;
+            width: 100%;
+        }
+        @include breakpoint(smalls) {
+            margin-left: 0;
+        }
+    }
+    .huzur & {
+        font-size: 24px;
+        font-family: $font_normal;
+        color: rgb(22, 22, 22);
+        line-height: 1.5;
+        margin: 0;
+       // margin-left: 5%;
+        @include breakpoint(huges) {
+            font-size: 18px;
+       //     margin-left: 45%;
+        }
+        @include breakpoint(larges) {
+            font-size: 16px;
+       //     margin-left: 51%;
+            width: 64%;
+        }
+        @include breakpoint(mediums) {
+            margin-top: 15px;
+         //   margin-left: 46%;
+            width: 100%;
+        }
+        @include breakpoint(smalls) {
+            margin-left: 0;
+        }
+    }
+}

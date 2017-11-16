@@ -1,0 +1,22 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: $zindex_header;
+}
+
+.top {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    //border-bottom: 2px solid $gray_dark;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+    z-index: $zindex_header;
+}
+
+.logo {
+    margin: 20px auto;
+    height: 45px;
+    @include breakpoint(smalls) {
+        height: 20px;
+    }
+}
+

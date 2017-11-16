@@ -1,0 +1,47 @@
+//abstracts (variables, mixins...)
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/fonts";
+
+
+//vendor
+@import "vendor/bootstrap";
+@import "vendor/jquery.fancybox-1.3.4";
+@import "vendor/sweetalert2-min";
+@import "vendor/snazzy-settings";
+@import "vendor/snazzy-info-window";
+
+
+
+//base
+@import "base/base";
+@import "base/typography";
+@import "base/helpers";
+@import "base/sprite"; 
+
+//components
+@import "components/nav";
+@import "components/sliders";
+@import "components/buttons";
+@import "components/boxes"; 
+@import "components/heros";
+@import "components/icons";
+@import "components/gallery";
+@import "components/map";
+@import "components/contact";
+@import "components/plans";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/forms";
+@import "layout/grids";
+
+//pages
+//@import "pages/category";
+//@import "pages/about";
+//@import "pages/contact";
+
+/*! sourceMappingURL=app.css.map */
